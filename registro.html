@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/style2.css">
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <title>Registro de Atividades - Health Track</title>
+
+</head>
+
+<body>
+
+  <header class="navbar navbar-dark sticky-top flex-md-nowrap p-0 shadow" id="cabecalho">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" id="logo-nome">Health Track</a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-nav">
+      <div class="nav-item text-nowrap">
+        <a class="nav-link px-3" id="botaosair" href="index.html">Sair</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3">
+          <img id="logo" src="./images/Logo.png">
+          <ul class="nav flex-column mb-2">
+            <li id="cadastrar">CADASTRAR</li>
+            <li><a class="nav-link" href="#"> Exercícios </a></li>
+            <li><a class="nav-link" href="#"> Alimentação </a></li>
+            <li><a class="nav-link" href="#"> Peso </a></li>
+            <li><a class="nav-link" id="botaovoltar" href="dashboard.html">VOLTAR</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-7 mx-auto">
+        <h2 class="pt-5">Atividades Físicas</h2>
+        <!-- <div class="table-responsive"> -->
+        <form id="formulario_atividades" method="post">
+          <div class="justify-content-center ">
+            <div class="row justify-content-center">
+              <div class="col-5 mb-5">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Exercícios</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>Escolher...</option>
+                  <option value="">Esteira</option>
+                  <option value="2">Musculação</option>
+                  <option value="3">Boxe</option>
+                  <option value="2">Natação</option>
+                  <option value="3">Yoga</option>
+                  <option value="">Corrida</option>
+                  <option value="2">Futebol</option>
+                  <option value="3">Pular corda</option>
+                  <option value="2">Spinning</option>
+                  <option value="3">Hidro</option>
+                </select>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-2">
+              <div class="form-group col-3 ">
+                <label for="formGroupExampleInput">Data</label>
+                <input type="date" class="form-control " id="formGroupExampleInput" placeholder="">
+                <button type="submit" class="btn btn-dark mt-4">Adicionar</button>
+              </div>
+              <div class="form-group col-3">
+                <label for="formGroupExampleInput2">Duração</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="35">
+              </div>
+              <div class="form-group col-3">
+                <label for="formGroupExampleInput2">Gasto Calórico</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="155">
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <h2 class="pt-5">Alimentação</h2>
+        <form id="formulario_alimentacao" method="post">
+          <div class="justify-content-center">
+            <div class="row justify-content-center">
+              <div class="col-5 mb-5">
+                <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Alimentos</label>
+                <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                  <option selected>Escolher...</option>
+                  <option value="">Abacate</option>
+                  <option value="2">Banana</option>
+                  <option value="3">Morango</option>
+                  <option value="4">Carne bovina</option>
+                  <option value="5">Ovo</option>
+                  <option value="6">Peito de frango</option>
+                  <option value="7">Brócolis</option>
+                  <option value="8">Cenouras</option>
+                  <option value="9">Arroz</option>
+                </select>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-2 ">
+              <div class="form-group col-3">
+                <label for="formGroupExampleInput">Data</label>
+                <input type="date" class="form-control " id="formGroupExampleInput" placeholder="">
+                <button type="submit" class="btn btn-dark mt-4">Adicionar</button>
+              </div>
+              <div class="form-group col-3">
+                <label for="formGroupExampleInput2">Quantidade</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+              </div>
+              <div class="form-group col-3">
+                <label for="formGroupExampleInput2">Caloria Ingerida</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <h2 class="pt-5">Peso</h2>
+        <form id="formulario_peso" method="post">
+          <div class="receitas col-8 justify-content-center">
+            <div class="row justify-content-center">
+            </div>
+            <div class="row justify-content-center mt-2 ">
+              <div class="form-group col-4">
+                <label for="formGroupExampleInput">Data</label>
+                <input type="date" class="form-control " id="formGroupExampleInput" placeholder="">
+                <button type="submit" class="btn btn-dark mt-4">Adicionar</button>
+              </div>
+              <div class="form-group col-4">
+                <label for="formGroupExampleInput2">Peso</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+              </div>
+            </div>
+          </div>
+        </form>
+    </div>
+    </main>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
